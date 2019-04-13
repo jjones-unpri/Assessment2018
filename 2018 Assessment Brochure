@@ -1409,16 +1409,16 @@ IF((17_SAM_INF_13.3_Val="3"),4
 ***Promoting_Section=VALUE(IMPORT_VALUE(2018_Assessment_SG,Promoting_Section))
 ***Assurance_Section=VALUE(IMPORT_VALUE(2018_Assessment_SG,Assurance_Section))
 ***SG_12_3_Score=IMPORT_VALUE(2018_Assessment_SAM,SG_12_3_Score)
-***SG_12_5_Score=IMPORT_VALUE(2018_Assessment_SAM,SG_12_5_Score)
-***SAM_LE_BAND=TEXT(IMPORT_TEXT(2018_Assessment_SAM,18_SAM_LE_BAND))
-***SAM_LE_Total=IF(((SAM_LE_BAND)="E"), "0",IMPORT_VALUE(2018_Assessment_SAM,SAM_LE_T_Score))
-***SAM_LE_Denom=IMPORT_VALUE(2018_Assessment_SAM,SAM_LE_Denom)
-***SAM_LE_Nbindics=IMPORT_VALUE(2018_Assessment_SAM,SAM_LE_NbIndics)
-***SAM_LE_add_text=TEXT(IFBLANK(IMPORT_TEXT(2018_Assessment_SAM,SAM_LE_Add_text),"No Additional Indicators"))
-***SAM_LE_Eng=IMPORT_TEXT(2018_Assessment_SAM,LE_Eng)
-***SAM_LE_Vot=IMPORT_TEXT(2018_Assessment_SAM,LE_Vot)
-***SG_12_IC_LE=VALUE(IMPORT_VALUE(2018_Assessment_SAM,SG_12_IC_LE))
-***SG_12_FM_LE=VALUE(IMPORT_VALUE(2018_Assessment_SAM,SG_12_FM_LE))
+***SG_12_5_Score=IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SG_12_5_Score)
+***SAM_LE_BAND=TEXT(IMPORT_TEXT(2018_Assessment_SAM - with corrections- not to be uploaded,18_SAM_LE_BAND))
+***SAM_LE_Total=IF(((SAM_LE_BAND)="E"), "0",IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_LE_T_Score))
+***SAM_LE_Denom=IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_LE_Denom)
+***SAM_LE_Nbindics=IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_LE_NbIndics)
+***SAM_LE_add_text=TEXT(IFBLANK(IMPORT_TEXT(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_LE_Add_text),"No Additional Indicators"))
+***SAM_LE_Eng=IMPORT_TEXT(2018_Assessment_SAM - with corrections- not to be uploaded,LE_Eng)
+***SAM_LE_Vot=IMPORT_TEXT(2018_Assessment_SAM - with corrections- not to be uploaded,LE_Vot)
+***SG_12_IC_LE=VALUE(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SG_12_IC_LE))
+***SG_12_FM_LE=VALUE(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SG_12_FM_LE))
 ***SG_12_3_LE_Score=TEXT(
 IF((SAM_LE_BAND="NA")OR(SAM_LE_BAND="NR"),"NA",
 IF((VALUE(SG_12_IC_LE)=0),"NA",
@@ -1431,78 +1431,78 @@ IF(((SAM_LE_BAND)="E"), "0",
 IF(((SG_12_FM_LE)=1),TEXT(VALUE(SG_12_5_Score)))))))
 ***SAM_02_1_LE_SCORE=TEXT(
 IF((SAM_LE_BAND="NA")OR(SAM_LE_BAND="NR"),"NA",
-IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02_1_LE_SCORE)))))
+IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02_1_LE_SCORE)))))
 ***SAM_02.2A_LE1_SCORE=TEXT(
 IF((SAM_LE_BAND="NA")OR(SAM_LE_BAND="NR"),"NA", 
-IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.2A_LE1_SCORE)))))
+IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.2A_LE1_SCORE)))))
 ***SAM_02.2_LE2_SCORE=TEXT(
 IF((SAM_LE_BAND="NA")OR(SAM_LE_BAND="NR"),"NA", 
-IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.2_LE2_SCORE)))))
+IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.2_LE2_SCORE)))))
 ***SAM_02.2_LE3_SCORE=TEXT(
 IF((SAM_LE_BAND="NA")OR(SAM_LE_BAND="NR"),"NA", 
-IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.2_LE3_SCORE)))))
+IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.2_LE3_SCORE)))))
 ***SAM_02.3_LE_SCORE=TEXT(
 IF((SAM_LE_BAND="NA")OR(SAM_LE_BAND="NR"),"NA", 
-IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.3_SCORE)))))
+IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.3_SCORE)))))
 ***SAM_02.4_LE_SCORE=TEXT(
 IF((SAM_LE_BAND="NA")OR(SAM_LE_BAND="NR"),"NA", 
-IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.4_LE_SCORE)))))
+IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.4_LE_SCORE)))))
 ***SAM_03.1_LE1_SCORE=TEXT(
 IF((SAM_LE_BAND="NA")OR(SAM_LE_BAND="NR"),"NA", 
 IF((SAM_LE_Eng="NA"), "NA",
-IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_03.1_LE1_SCORE))))))
+IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_03.1_LE1_SCORE))))))
 ***SAM_03.1_LE2_SCORE=TEXT(
 IF((SAM_LE_BAND="NA")OR(SAM_LE_BAND="NR"),"NA", 
 IF((SAM_LE_Vot="NA"), "NA",
-IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_03.1_LE2_SCORE))))))
+IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_03.1_LE2_SCORE))))))
 ***SAM_03.2_LE_SCORE=TEXT(
 IF((SAM_LE_BAND="NA")OR(SAM_LE_BAND="NR"),"NA", 
 IF((SAM_LE_Eng="NA"),"NA",
-IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_03.2_SCORE))))))
+IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_03.2_SCORE))))))
 ***SAM_03.3_LE_SCORE=TEXT(
 IF((SAM_LE_BAND="NA")OR(SAM_LE_BAND="NR"),"NA", 
 IF((SAM_LE_Vot="NA"), "NA",
-IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_03.3_SCORE))))))
+IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_03.3_SCORE))))))
 ***SAM_04.1_LE_SCORE=TEXT(
 IF((SAM_LE_BAND="NA")OR(SAM_LE_BAND="NR"),"NA", 
-IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_04.1_SCORE)))))
+IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_04.1_SCORE)))))
 ***SAM_04.2_LE_SCORE=TEXT(
 IF((SAM_LE_BAND="NA")OR(SAM_LE_BAND="NR"),"NA", 
-IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_04.2_LE_SCORE)))))
+IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_04.2_LE_SCORE)))))
 ***SAM_04.4_LE_SCORE=TEXT(
 IF((SAM_LE_BAND="NA")OR(SAM_LE_BAND="NR"),"NA", 
-IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_04.4_SCORE)))))
+IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_04.4_SCORE)))))
 ***SAM_05.1_LE_SCORE=TEXT(
 IF((SAM_LE_BAND="NA")OR(SAM_LE_BAND="NR"),"NA", 
-IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_05.1_LE_SCORE)))))
+IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_05.1_LE_SCORE)))))
 ***SAM_05.2_LE_SCORE=TEXT(
 IF((SAM_LE_BAND="NA")OR(SAM_LE_BAND="NR"),"NA", 
-IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_05.2_LE_SCORE)))))
+IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_05.2_LE_SCORE)))))
 ***SAM_06.1_LE1_SCORE=TEXT(
 IF((SAM_LE_BAND="NA")OR(SAM_LE_BAND="NR"),"NA", 
 IF((SAM_LE_Eng="NA"),"NA",
-IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_06.1_LE1_SCORE))))))
+IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_06.1_LE1_SCORE))))))
 ***SAM_06.1_LE2_SCORE=TEXT(
 IF((SAM_LE_BAND="NA")OR(SAM_LE_BAND="NR"),"NA", 
 IF((SAM_LE_Vot="NA"), "NA",
-IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_06.1_LE2_SCORE))))))
+IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_06.1_LE2_SCORE))))))
 ***SAM_07_LE_SCORE=TEXT(
 IF((SAM_LE_BAND="NA")OR(SAM_LE_BAND="NR"),"NA", 
 IF((SAM_LE_Vot="NA"), "NA",
-IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_07_SCORE))))))
+IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_07_SCORE))))))
 ***SAM_09.1_LE_SCORE=TEXT(
 IF((SAM_LE_BAND="NA")OR(SAM_LE_BAND="NR"),"NA", 
-IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_09.1_SCORE_LE)))))
+IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_09.1_SCORE_LE)))))
 ***SAM_SG_19_LE_SCORE=TEXT(
 IF((SAM_LE_BAND="NA")OR(SAM_LE_BAND="NR"),"NA", 
-IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_SG_19_SCORE)))))
-***SAM_FISSA_BAND=TEXT(IMPORT_TEXT(2018_Assessment_SAM,18_SAM_FISSA_BAND))
-***SAM_FISSA_Total=IF(((SAM_FISSA_BAND)="E"), "0",IMPORT_VALUE(2018_Assessment_SAM,SAM_FISSA_T_Score))
-***SAM_FISSA_Denom=IMPORT_VALUE(2018_Assessment_SAM,SAM_FISSA_Denom)
-***SAM_FISSA_Nbindics=IMPORT_VALUE(2018_Assessment_SAM,SAM_FISSA_NbIndics)
-***SAM_FISSA_add_text=TEXT(IFBLANK(IMPORT_TEXT(2018_Assessment_SAM,SAM_FISSA_Add_text),"No Additional Indicators"))
-***SG_12_IC_FISSA=VALUE(IMPORT_VALUE(2018_Assessment_SAM,SG_12_IC_FISSA))
-***SG_12_FM_FISSA=VALUE(IMPORT_VALUE(2018_Assessment_SAM,SG_12_FM_FISSA))
+IF((SAM_LE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_SG_19_SCORE)))))
+***SAM_FISSA_BAND=TEXT(IMPORT_TEXT(2018_Assessment_SAM - with corrections- not to be uploaded,18_SAM_FISSA_BAND))
+***SAM_FISSA_Total=IF(((SAM_FISSA_BAND)="E"), "0",IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_FISSA_T_Score))
+***SAM_FISSA_Denom=IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_FISSA_Denom)
+***SAM_FISSA_Nbindics=IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_FISSA_NbIndics)
+***SAM_FISSA_add_text=TEXT(IFBLANK(IMPORT_TEXT(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_FISSA_Add_text),"No Additional Indicators"))
+***SG_12_IC_FISSA=VALUE(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SG_12_IC_FISSA))
+***SG_12_FM_FISSA=VALUE(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SG_12_FM_FISSA))
 ***SG_12_3_FISSA_Score=TEXT(
 IF((SAM_FISSA_BAND="NA")OR(SAM_FISSA_BAND="NR"),"NA",
 IF((VALUE(SG_12_IC_FISSA)=0),"NA",
@@ -1515,51 +1515,51 @@ IF(((SAM_FISSA_BAND)="E"), "0",
 IF(((SG_12_FM_FISSA)=1),TEXT(VALUE(SG_12_5_Score)))))))
 ***SAM_02_1_FISSA_SCORE=TEXT(
 IF((SAM_FISSA_BAND="NA")OR(SAM_FISSA_BAND="NR"),"NA", 
-IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02_1_FISSA_SCORE)))))
+IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02_1_FISSA_SCORE)))))
 ***SAM_02.2A_FISSA1_SCORE=TEXT(
-IF((SAM_FISSA_BAND="NA")OR(SAM_FISSA_BAND="NR"),"NA", IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.2A_FISSA1_SCORE)))))
+IF((SAM_FISSA_BAND="NA")OR(SAM_FISSA_BAND="NR"),"NA", IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.2A_FISSA1_SCORE)))))
 ***SAM_02.2_FISSA2_SCORE=TEXT(
-IF((SAM_FISSA_BAND="NA")OR(SAM_FISSA_BAND="NR"),"NA", IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.2_FISSA2_SCORE)))))
+IF((SAM_FISSA_BAND="NA")OR(SAM_FISSA_BAND="NR"),"NA", IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.2_FISSA2_SCORE)))))
 ***SAM_02.2_FISSA3_SCORE=TEXT(
-IF((SAM_FISSA_BAND="NA")OR(SAM_FISSA_BAND="NR"),"NA", IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.2_FISSA3_SCORE)))))
+IF((SAM_FISSA_BAND="NA")OR(SAM_FISSA_BAND="NR"),"NA", IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.2_FISSA3_SCORE)))))
 ***SAM_02.3_FISSA_SCORE=TEXT(
 IF((SAM_FISSA_BAND="NA")OR(SAM_FISSA_BAND="NR"),"NA", 
-IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.3_SCORE)))))
+IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.3_SCORE)))))
 ***SAM_02.4_FISSA_SCORE=TEXT(
-IF((SAM_FISSA_BAND="NA")OR(SAM_FISSA_BAND="NR"),"NA", IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.4_FISSA_SCORE)))))
+IF((SAM_FISSA_BAND="NA")OR(SAM_FISSA_BAND="NR"),"NA", IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.4_FISSA_SCORE)))))
 ***SAM_03.1_FISSA1_SCORE=TEXT(
-IF((SAM_FISSA_BAND="NA")OR(SAM_FISSA_BAND="NR"),"NA", IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_03.1_FISSA1_SCORE)))))
+IF((SAM_FISSA_BAND="NA")OR(SAM_FISSA_BAND="NR"),"NA", IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_03.1_FISSA1_SCORE)))))
 ***SAM_03.2_FISSA_SCORE=TEXT(
 IF((SAM_FISSA_BAND="NA")OR(SAM_FISSA_BAND="NR"),"NA", 
-IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_03.2_SCORE)))))
+IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_03.2_SCORE)))))
 ***SAM_03.3_FISSA_SCORE=TEXT(
 IF((SAM_FISSA_BAND="NA")OR(SAM_FISSA_BAND="NR"),"NA", 
-IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_03.3_SCORE)))))
+IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_03.3_SCORE)))))
 ***SAM_04.1_FISSA_SCORE=TEXT(
 IF((SAM_FISSA_BAND="NA")OR(SAM_FISSA_BAND="NR"),"NA", 
-IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_04.1_SCORE)))))
+IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_04.1_SCORE)))))
 ***SAM_04.2_FISSA_SCORE=TEXT(
-IF((SAM_FISSA_BAND="NA")OR(SAM_FISSA_BAND="NR"),"NA", IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_04.2_FISSA_SCORE)))))
+IF((SAM_FISSA_BAND="NA")OR(SAM_FISSA_BAND="NR"),"NA", IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_04.2_FISSA_SCORE)))))
 ***SAM_04.4_FISSA_SCORE=TEXT(
 IF((SAM_FISSA_BAND="NA")OR(SAM_FISSA_BAND="NR"),"NA", 
-IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_04.4_SCORE)))))
+IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_04.4_SCORE)))))
 ***SAM_05.1_FISSA_SCORE=TEXT(
-IF((SAM_FISSA_BAND="NA")OR(SAM_FISSA_BAND="NR"),"NA", IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_05.1_FISSA_SCORE)))))
+IF((SAM_FISSA_BAND="NA")OR(SAM_FISSA_BAND="NR"),"NA", IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_05.1_FISSA_SCORE)))))
 ***SAM_05.2_FISSA_SCORE=TEXT(
-IF((SAM_FISSA_BAND="NA")OR(SAM_FISSA_BAND="NR"),"NA", IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_05.2_FISSA_SCORE)))))
+IF((SAM_FISSA_BAND="NA")OR(SAM_FISSA_BAND="NR"),"NA", IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_05.2_FISSA_SCORE)))))
 ***SAM_06.1_FISSA_SCORE=TEXT(
-IF((SAM_FISSA_BAND="NA")OR(SAM_FISSA_BAND="NR"),"NA", IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_06.1_FISSA_SCORE)))))
-***SAM_09.1_FISSA_SCORE=TEXT(IF((SAM_FISSA_BAND="NA")OR(SAM_FISSA_BAND="NR"),"NA", IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_09.1_SCORE_FISSA)))))
+IF((SAM_FISSA_BAND="NA")OR(SAM_FISSA_BAND="NR"),"NA", IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_06.1_FISSA_SCORE)))))
+***SAM_09.1_FISSA_SCORE=TEXT(IF((SAM_FISSA_BAND="NA")OR(SAM_FISSA_BAND="NR"),"NA", IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_09.1_SCORE_FISSA)))))
 ***SAM_SG_19_FISSA_SCORE=TEXT(
 IF((SAM_FISSA_BAND="NA")OR(SAM_FISSA_BAND="NR"),"NA", 
-IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_SG_19_SCORE)))))
-***SAM_FICF_BAND=TEXT(IMPORT_TEXT(2018_Assessment_SAM,18_SAM_FICF_BAND))
-***SAM_FICF_Total=IF(((SAM_FICF_BAND)="E"), "0",IMPORT_VALUE(2018_Assessment_SAM,SAM_FICF_T_Score))
-***SAM_FICF_Denom=IMPORT_VALUE(2018_Assessment_SAM,SAM_FICF_Denom)
-***SAM_FICF_Nbindics=IMPORT_VALUE(2018_Assessment_SAM,SAM_FICF_NbIndics)
-***SAM_FICF_add_text=TEXT(IFBLANK(IMPORT_TEXT(2018_Assessment_SAM,SAM_FICF_Add_text),"No Additional Indicators"))
-***SG_12_IC_FICF=VALUE(IMPORT_VALUE(2018_Assessment_SAM,SG_12_IC_FICF))
-***SG_12_FM_FICF=VALUE(IMPORT_VALUE(2018_Assessment_SAM,SG_12_FM_FICF))
+IF((SAM_FISSA_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_SG_19_SCORE)))))
+***SAM_FICF_BAND=TEXT(IMPORT_TEXT(2018_Assessment_SAM - with corrections- not to be uploaded,18_SAM_FICF_BAND))
+***SAM_FICF_Total=IF(((SAM_FICF_BAND)="E"), "0",IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_FICF_T_Score))
+***SAM_FICF_Denom=IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_FICF_Denom)
+***SAM_FICF_Nbindics=IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_FICF_NbIndics)
+***SAM_FICF_add_text=TEXT(IFBLANK(IMPORT_TEXT(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_FICF_Add_text),"No Additional Indicators"))
+***SG_12_IC_FICF=VALUE(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SG_12_IC_FICF))
+***SG_12_FM_FICF=VALUE(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SG_12_FM_FICF))
 ***SG_12_3_FICF_Score=TEXT(
 IF((SAM_FICF_BAND="NA")OR(SAM_FICF_BAND="NR"),"NA",
 IF((VALUE(SG_12_IC_FICF)=0),"NA",
@@ -1571,52 +1571,52 @@ IF(((SG_12_FM_FICF)=0),"NA",
 IF(((SAM_FICF_BAND)="E"), "0",
 IF(((SG_12_FM_FICF)=1),TEXT(VALUE(SG_12_5_Score)))))))
 ***SAM_02_1_FICF_SCORE=TEXT(
-IF((SAM_FICF_BAND="NA")OR(SAM_FICF_BAND="NR"),"NA", IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02_1_FICF_SCORE)))))
+IF((SAM_FICF_BAND="NA")OR(SAM_FICF_BAND="NR"),"NA", IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02_1_FICF_SCORE)))))
 ***SAM_02.2A_FICF1_SCORE=TEXT(
-IF((SAM_FICF_BAND="NA")OR(SAM_FICF_BAND="NR"),"NA", IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.2A_FICF1_SCORE)))))
+IF((SAM_FICF_BAND="NA")OR(SAM_FICF_BAND="NR"),"NA", IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.2A_FICF1_SCORE)))))
 ***SAM_02.2_FICF2_SCORE=TEXT(
-IF((SAM_FICF_BAND="NA")OR(SAM_FICF_BAND="NR"),"NA", IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.2_FICF2_SCORE)))))
+IF((SAM_FICF_BAND="NA")OR(SAM_FICF_BAND="NR"),"NA", IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.2_FICF2_SCORE)))))
 ***SAM_02.2_FICF3_SCORE=TEXT(
-IF((SAM_FICF_BAND="NA")OR(SAM_FICF_BAND="NR"),"NA", IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.2_FICF3_SCORE)))))
+IF((SAM_FICF_BAND="NA")OR(SAM_FICF_BAND="NR"),"NA", IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.2_FICF3_SCORE)))))
 ***SAM_02.3_FICF_SCORE=TEXT(
 IF((SAM_FICF_BAND="NA")OR(SAM_FICF_BAND="NR"),"NA", 
-IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.3_SCORE)))))
+IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.3_SCORE)))))
 ***SAM_02.4_FICF_SCORE=TEXT(
-IF((SAM_FICF_BAND="NA")OR(SAM_FICF_BAND="NR"),"NA", IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.4_FICF_SCORE)))))
+IF((SAM_FICF_BAND="NA")OR(SAM_FICF_BAND="NR"),"NA", IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.4_FICF_SCORE)))))
 ***SAM_03.1_FICF1_SCORE=TEXT(
-IF((SAM_FICF_BAND="NA")OR(SAM_FICF_BAND="NR"),"NA", IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_03.1_FICF1_SCORE)))))
+IF((SAM_FICF_BAND="NA")OR(SAM_FICF_BAND="NR"),"NA", IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_03.1_FICF1_SCORE)))))
 ***SAM_03.2_FICF_SCORE=TEXT(
 IF((SAM_FICF_BAND="NA")OR(SAM_FICF_BAND="NR"),"NA", 
-IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_03.2_SCORE)))))
+IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_03.2_SCORE)))))
 ***SAM_03.3_FICF_SCORE=TEXT(
 IF((SAM_FICF_BAND="NA")OR(SAM_FICF_BAND="NR"),"NA", 
-IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_03.3_SCORE)))))
+IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_03.3_SCORE)))))
 ***SAM_04.1_FICF_SCORE=TEXT(
 IF((SAM_FICF_BAND="NA")OR(SAM_FICF_BAND="NR"),"NA", 
-IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_04.1_SCORE)))))
+IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_04.1_SCORE)))))
 ***SAM_04.2_FICF_SCORE=TEXT(
-IF((SAM_FICF_BAND="NA")OR(SAM_FICF_BAND="NR"),"NA", IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_04.2_FICF_SCORE)))))
+IF((SAM_FICF_BAND="NA")OR(SAM_FICF_BAND="NR"),"NA", IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_04.2_FICF_SCORE)))))
 ***SAM_04.4_FICF_SCORE=TEXT(
 IF((SAM_FICF_BAND="NA")OR(SAM_FICF_BAND="NR"),"NA", 
-IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_04.4_SCORE)))))
+IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_04.4_SCORE)))))
 ***SAM_05.1_FICF_SCORE=TEXT(
-IF((SAM_FICF_BAND="NA")OR(SAM_FICF_BAND="NR"),"NA", IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_05.1_FICF_SCORE)))))
+IF((SAM_FICF_BAND="NA")OR(SAM_FICF_BAND="NR"),"NA", IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_05.1_FICF_SCORE)))))
 ***SAM_05.2_FICF_SCORE=TEXT(
-IF((SAM_FICF_BAND="NA")OR(SAM_FICF_BAND="NR"),"NA", IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_05.2_FICF_SCORE)))))
+IF((SAM_FICF_BAND="NA")OR(SAM_FICF_BAND="NR"),"NA", IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_05.2_FICF_SCORE)))))
 ***SAM_06.1_FICF_SCORE=TEXT(
-IF((SAM_FICF_BAND="NA")OR(SAM_FICF_BAND="NR"),"NA", IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_06.1_FICF_SCORE)))))
+IF((SAM_FICF_BAND="NA")OR(SAM_FICF_BAND="NR"),"NA", IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_06.1_FICF_SCORE)))))
 ***SAM_09.1_FICF_SCORE=TEXT(
-IF((SAM_FICF_BAND="NA")OR(SAM_FICF_BAND="NR"),"NA", IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_09.1_SCORE_FICF)))))
+IF((SAM_FICF_BAND="NA")OR(SAM_FICF_BAND="NR"),"NA", IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_09.1_SCORE_FICF)))))
 ***SAM_SG_19_FICF_SCORE=TEXT(
 IF((SAM_FICF_BAND="NA")OR(SAM_FICF_BAND="NR"),"NA", 
-IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_SG_19_SCORE)))))
-***SAM_FICNF_BAND=TEXT(IMPORT_TEXT(2018_Assessment_SAM,18_SAM_FICNF_BAND))
-***SAM_FICNF_Total=IF(((SAM_FICNF_Band)="E"), "0",IMPORT_VALUE(2018_Assessment_SAM,SAM_FICNF_T_Score))
-***SAM_FICNF_Denom=IMPORT_VALUE(2018_Assessment_SAM,SAM_FICNF_Denom)
-***SAM_FICNF_Nbindics=IMPORT_VALUE(2018_Assessment_SAM,SAM_FICNF_NbIndics)
-***SAM_FICNF_add_text=TEXT(IFBLANK(IMPORT_TEXT(2018_Assessment_SAM,SAM_FICNF_Add_text),"No Additional Indicators"))
-***SG_12_IC_FICNF=VALUE(IMPORT_VALUE(2018_Assessment_SAM,SG_12_IC_FICNF))
-***SG_12_FM_FICNF=VALUE(IMPORT_VALUE(2018_Assessment_SAM,SG_12_FM_FICNF))
+IF((SAM_FICF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_SG_19_SCORE)))))
+***SAM_FICNF_BAND=TEXT(IMPORT_TEXT(2018_Assessment_SAM - with corrections- not to be uploaded,18_SAM_FICNF_BAND))
+***SAM_FICNF_Total=IF(((SAM_FICNF_Band)="E"), "0",IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_FICNF_T_Score))
+***SAM_FICNF_Denom=IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_FICNF_Denom)
+***SAM_FICNF_Nbindics=IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_FICNF_NbIndics)
+***SAM_FICNF_add_text=TEXT(IFBLANK(IMPORT_TEXT(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_FICNF_Add_text),"No Additional Indicators"))
+***SG_12_IC_FICNF=VALUE(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SG_12_IC_FICNF))
+***SG_12_FM_FICNF=VALUE(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SG_12_FM_FICNF))
 ***SG_12_3_FICNF_Score=TEXT(
 IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA",
 IF((VALUE(SG_12_IC_FICNF)=0),"NA",
@@ -1628,47 +1628,47 @@ IF(((SG_12_FM_FICNF)=0),"NA",
 IF(((SAM_FICNF_Band)="E"), "0",
 IF(((SG_12_FM_FICNF)=1),TEXT(VALUE(SG_12_5_Score)))))))
 ***SAM_02_1_FICNF_SCORE=TEXT(
-IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02_1_FICNF_SCORE)))))
+IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02_1_FICNF_SCORE)))))
 ***SAM_02.2A_FICNF1_SCORE=TEXT(
-IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.2A_FICNF1_SCORE)))))
+IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.2A_FICNF1_SCORE)))))
 ***SAM_02.2_FICNF2_SCORE=TEXT(
-IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.2_FICNF2_SCORE)))))
+IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.2_FICNF2_SCORE)))))
 ***SAM_02.2_FICNF3_SCORE=TEXT(
-IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.2_FICNF3_SCORE)))))
+IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.2_FICNF3_SCORE)))))
 ***SAM_02.3_FICNF_SCORE=TEXT(
-IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.3_SCORE)))))
+IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.3_SCORE)))))
 ***SAM_02.4_FICNF_SCORE=TEXT(
-IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.4_FICNF_SCORE)))))
+IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.4_FICNF_SCORE)))))
 ***SAM_03.1_FICNF1_SCORE=TEXT(
-IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_03.1_FICNF1_SCORE)))))
+IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_03.1_FICNF1_SCORE)))))
 ***SAM_03.2_FICNF_SCORE=TEXT(
-IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_03.2_SCORE)))))
+IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_03.2_SCORE)))))
 ***SAM_03.3_FICNF_SCORE=TEXT(
-IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_03.3_SCORE)))))
+IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_03.3_SCORE)))))
 ***SAM_04.1_FICNF_SCORE=TEXT(
-IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_04.1_SCORE)))))
+IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_04.1_SCORE)))))
 ***SAM_04.2_FICNF_SCORE=TEXT(
-IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_04.2_FICNF_SCORE)))))
+IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_04.2_FICNF_SCORE)))))
 ***SAM_04.4_FICNF_SCORE=TEXT(
-IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_04.4_SCORE)))))
+IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_04.4_SCORE)))))
 ***SAM_05.1_FICNF_SCORE=TEXT(
-IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_05.1_FICNF_SCORE)))))
+IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_05.1_FICNF_SCORE)))))
 ***SAM_05.2_FICNF_SCORE=TEXT(
-IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_05.2_FICNF_SCORE)))))
+IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_05.2_FICNF_SCORE)))))
 ***SAM_06.1_FICNF_SCORE=TEXT(
-IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_06.1_FICNF_SCORE)))))
+IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_06.1_FICNF_SCORE)))))
 ***SAM_09.1_FICNF_SCORE=TEXT(
-IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_09.1_SCORE_FICNF)))))
+IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_09.1_SCORE_FICNF)))))
 ***SAM_SG_19_FICNF_SCORE=TEXT(
 IF((SAM_FICNF_Band="NA")OR(SAM_FICNF_Band="NR"),"NA", 
-IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_SG_19_SCORE)))))
-***SAM_FISEC_BAND=TEXT(IMPORT_TEXT(2018_Assessment_SAM,18_SAM_FISEC_BAND))
-***SAM_FISEC_Total=IF(((SAM_FISEC_BAND)="E"), "0",IMPORT_VALUE(2018_Assessment_SAM,SAM_FISEC_T_Score))
-***SAM_FISEC_Denom=IMPORT_VALUE(2018_Assessment_SAM,SAM_FISEC_Denom)
-***SAM_FISEC_Nbindics=IMPORT_VALUE(2018_Assessment_SAM,SAM_FISEC_NbIndics)
-***SAM_FISEC_add_text=TEXT(IFBLANK(IMPORT_TEXT(2018_Assessment_SAM,SAM_FISEC_Add_text),"No Additional Indicators"))
-***SG_12_IC_FISEC=VALUE(IMPORT_VALUE(2018_Assessment_SAM,SG_12_IC_FISEC))
-***SG_12_FM_FISEC=VALUE(IMPORT_VALUE(2018_Assessment_SAM,SG_12_FM_FISEC))
+IF((SAM_FICNF_Band="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_SG_19_SCORE)))))
+***SAM_FISEC_BAND=TEXT(IMPORT_TEXT(2018_Assessment_SAM - with corrections- not to be uploaded,18_SAM_FISEC_BAND))
+***SAM_FISEC_Total=IF(((SAM_FISEC_BAND)="E"), "0",IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_FISEC_T_Score))
+***SAM_FISEC_Denom=IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_FISEC_Denom)
+***SAM_FISEC_Nbindics=IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_FISEC_NbIndics)
+***SAM_FISEC_add_text=TEXT(IFBLANK(IMPORT_TEXT(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_FISEC_Add_text),"No Additional Indicators"))
+***SG_12_IC_FISEC=VALUE(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SG_12_IC_FISEC))
+***SG_12_FM_FISEC=VALUE(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SG_12_FM_FISEC))
 ***SG_12_3_FISEC_Score=TEXT(
 IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA",
 IF((VALUE(SG_12_IC_FISEC)=0),"NA",
@@ -1680,47 +1680,47 @@ IF(((SG_12_FM_FISEC)=0),"NA",
 IF(((SAM_FISEC_BAND)="E"), "0",
 IF(((SG_12_FM_FISEC)=1),TEXT(VALUE(SG_12_5_Score)))))))
 ***SAM_02_1_FISEC_SCORE=TEXT(
-IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02_1_FISEC_SCORE)))))
+IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02_1_FISEC_SCORE)))))
 ***SAM_02.2A_FISEC1_SCORE=TEXT(
-IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.2A_FISEC1_SCORE)))))
+IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.2A_FISEC1_SCORE)))))
 ***SAM_02.2_FISEC2_SCORE=TEXT(
-IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.2_FISEC2_SCORE)))))
+IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.2_FISEC2_SCORE)))))
 ***SAM_02.2_FISEC3_SCORE=TEXT(
-IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.2_FISEC3_SCORE)))))
+IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.2_FISEC3_SCORE)))))
 ***SAM_02.3_FISEC_SCORE=TEXT(
-IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.3_SCORE)))))
+IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.3_SCORE)))))
 ***SAM_02.4_FISEC_SCORE=TEXT(
-IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.4_FISEC_SCORE)))))
+IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.4_FISEC_SCORE)))))
 ***SAM_03.1_FISEC1_SCORE=TEXT(
-IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_03.1_FISEC1_SCORE)))))
+IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_03.1_FISEC1_SCORE)))))
 ***SAM_03.2_FISEC_SCORE=TEXT(
-IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_03.2_SCORE)))))
+IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_03.2_SCORE)))))
 ***SAM_03.3_FISEC_SCORE=TEXT(
-IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_03.3_SCORE)))))
+IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_03.3_SCORE)))))
 ***SAM_04.1_FISEC_SCORE=TEXT(
-IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_04.1_SCORE)))))
+IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_04.1_SCORE)))))
 ***SAM_04.2_FISEC_SCORE=TEXT(
-IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_04.2_FISEC_SCORE)))))
+IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_04.2_FISEC_SCORE)))))
 ***SAM_04.4_FISEC_SCORE=TEXT(
-IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_04.4_SCORE)))))
+IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_04.4_SCORE)))))
 ***SAM_05.1_FISEC_SCORE=TEXT(
-IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_05.1_FISEC_SCORE)))))
+IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_05.1_FISEC_SCORE)))))
 ***SAM_05.2_FISEC_SCORE=TEXT(
-IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_05.2_FISEC_SCORE)))))
+IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_05.2_FISEC_SCORE)))))
 ***SAM_06.1_FISEC_SCORE=TEXT(
-IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_06.1_FISEC_SCORE)))))
+IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_06.1_FISEC_SCORE)))))
 ***SAM_09.1_FISEC_SCORE=TEXT(
-IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_09.1_SCORE_FISEC)))))
+IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_09.1_SCORE_FISEC)))))
 ***SAM_SG_19_FISEC_SCORE=TEXT(
 IF((SAM_FISEC_BAND="NA")OR(SAM_FISEC_BAND="NR"),"NA", 
-IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_SG_19_SCORE)))))
-***SAM_PE_BAND=TEXT(IMPORT_TEXT(2018_Assessment_SAM,18_SAM_PE_BAND))
-***SAM_PE_Total=IF(((SAM_PE_BAND)="E"), "0",IMPORT_VALUE(2018_Assessment_SAM,SAM_PE_T_Score))
-***SAM_PE_Denom=IMPORT_VALUE(2018_Assessment_SAM,SAM_PE_Denom)
-***SAM_PE_Nbindics=IMPORT_VALUE(2018_Assessment_SAM,SAM_PE_NbIndics)
-***SAM_PE_add_text=TEXT(IFBLANK(IMPORT_TEXT(2018_Assessment_SAM,SAM_PE_Add_text),"No Additional Indicators"))
-***SG_12_IC_PE=VALUE(IMPORT_VALUE(2018_Assessment_SAM,SG_12_IC_PE))
-***SG_12_FM_PE=VALUE(IMPORT_VALUE(2018_Assessment_SAM,SG_12_FM_PE))
+IF((SAM_FISEC_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_SG_19_SCORE)))))
+***SAM_PE_BAND=TEXT(IMPORT_TEXT(2018_Assessment_SAM - with corrections- not to be uploaded,18_SAM_PE_BAND))
+***SAM_PE_Total=IF(((SAM_PE_BAND)="E"), "0",IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_PE_T_Score))
+***SAM_PE_Denom=IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_PE_Denom)
+***SAM_PE_Nbindics=IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_PE_NbIndics)
+***SAM_PE_add_text=TEXT(IFBLANK(IMPORT_TEXT(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_PE_Add_text),"No Additional Indicators"))
+***SG_12_IC_PE=VALUE(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SG_12_IC_PE))
+***SG_12_FM_PE=VALUE(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SG_12_FM_PE))
 ***SG_12_3_PE_Score=TEXT(
 IF((SAM_PE_BAND="NA")OR(SAM_PE_BAND="NR"),"NA",
 IF((VALUE(SG_12_IC_PE)=0),"NA",
@@ -1733,50 +1733,50 @@ IF(((SAM_PE_BAND)="E"), "0",
 IF(((SG_12_FM_PE)=1),TEXT(VALUE(SG_12_5_Score)))))))
 ***SAM_02_1_PE_SCORE=TEXT(
 IF((SAM_PE_BAND="NA")OR(SAM_PE_BAND="NR"),"NA", 
-IF((SAM_PE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02_1_PE_SCORE)))))
+IF((SAM_PE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02_1_PE_SCORE)))))
 ***SAM_02.2A_PE1_SCORE=TEXT(
 IF((SAM_PE_BAND="NA")OR(SAM_PE_BAND="NR"),"NA", 
-IF((SAM_PE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.2A_PE1_SCORE)))))
+IF((SAM_PE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.2A_PE1_SCORE)))))
 ***SAM_02.2_PE2_SCORE=TEXT(
 IF((SAM_PE_BAND="NA")OR(SAM_PE_BAND="NR"),"NA", 
-IF((SAM_PE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.2_PE2_SCORE)))))
+IF((SAM_PE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.2_PE2_SCORE)))))
 ***SAM_02.2_PE3_SCORE=TEXT(
 IF((SAM_PE_BAND="NA")OR(SAM_PE_BAND="NR"),"NA", 
-IF((SAM_PE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.2_PE3_SCORE)))))
+IF((SAM_PE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.2_PE3_SCORE)))))
 ***SAM_02.3_PE_SCORE=TEXT(
 IF((SAM_PE_BAND="NA")OR(SAM_PE_BAND="NR"),"NA", 
-IF((SAM_PE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.3_SCORE)))))
+IF((SAM_PE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.3_SCORE)))))
 ***SAM_02.4_PE_SCORE=TEXT(
 IF((SAM_PE_BAND="NA")OR(SAM_PE_BAND="NR"),"NA", 
-IF((SAM_PE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.4_PE_SCORE)))))
+IF((SAM_PE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.4_PE_SCORE)))))
 ***SAM_04.1_PE_SCORE=TEXT(
 IF((SAM_PE_BAND="NA")OR(SAM_PE_BAND="NR"),"NA", 
-IF((SAM_PE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_04.1_SCORE)))))
+IF((SAM_PE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_04.1_SCORE)))))
 ***SAM_04.2_PE_SCORE=TEXT(
 IF((SAM_PE_BAND="NA")OR(SAM_PE_BAND="NR"),"NA", 
-IF((SAM_PE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_04.2_PE_SCORE)))))
+IF((SAM_PE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_04.2_PE_SCORE)))))
 ***SAM_04.4_PE_SCORE=TEXT(
 IF((SAM_PE_BAND="NA")OR(SAM_PE_BAND="NR"),"NA", 
-IF((SAM_PE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_04.4_SCORE)))))
+IF((SAM_PE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_04.4_SCORE)))))
 ***SAM_05.1_PE_SCORE=TEXT(
 IF((SAM_PE_BAND="NA")OR(SAM_PE_BAND="NR"),"NA", 
-IF((SAM_PE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_05.1_PE_SCORE)))))
+IF((SAM_PE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_05.1_PE_SCORE)))))
 ***SAM_05.2_PE_SCORE=TEXT(
 IF((SAM_PE_BAND="NA")OR(SAM_PE_BAND="NR"),"NA", 
-IF((SAM_PE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_05.2_PE_SCORE)))))
+IF((SAM_PE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_05.2_PE_SCORE)))))
 ***SAM_09.1_PE_SCORE=TEXT(
 IF((SAM_PE_BAND="NA")OR(SAM_PE_BAND="NR"),"NA", 
-IF((SAM_PE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_09.1_SCORE_PE)))))
+IF((SAM_PE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_09.1_SCORE_PE)))))
 ***SAM_SG_19_PE_SCORE=TEXT(
 IF((SAM_PE_BAND="NA")OR(SAM_PE_BAND="NR"),"NA", 
-IF((SAM_PE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_SG_19_SCORE)))))
-***SAM_PR_BAND=TEXT(IMPORT_TEXT(2018_Assessment_SAM,18_SAM_PR_BAND))
-***SAM_PR_Total=IF(((SAM_PR_BAND)="E"), "0",IMPORT_VALUE(2018_Assessment_SAM,SAM_PR_T_Score))
-***SAM_PR_Denom=IMPORT_VALUE(2018_Assessment_SAM,SAM_PR_Denom)
-***SAM_PR_Nbindics=IMPORT_VALUE(2018_Assessment_SAM,SAM_PR_NbIndics)
-***SAM_PR_add_text=TEXT(IFBLANK(IMPORT_TEXT(2018_Assessment_SAM,SAM_PR_Add_text),"No Additional Indicators"))
-***SG_12_IC_PR=VALUE(IMPORT_VALUE(2018_Assessment_SAM,SG_12_IC_PR))
-***SG_12_FM_PR=VALUE(IMPORT_VALUE(2018_Assessment_SAM,SG_12_FM_PR))
+IF((SAM_PE_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_SG_19_SCORE)))))
+***SAM_PR_BAND=TEXT(IMPORT_TEXT(2018_Assessment_SAM - with corrections- not to be uploaded,18_SAM_PR_BAND))
+***SAM_PR_Total=IF(((SAM_PR_BAND)="E"), "0",IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_PR_T_Score))
+***SAM_PR_Denom=IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_PR_Denom)
+***SAM_PR_Nbindics=IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_PR_NbIndics)
+***SAM_PR_add_text=TEXT(IFBLANK(IMPORT_TEXT(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_PR_Add_text),"No Additional Indicators"))
+***SG_12_IC_PR=VALUE(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SG_12_IC_PR))
+***SG_12_FM_PR=VALUE(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SG_12_FM_PR))
 ***SG_12_3_PR_Score=TEXT(
 IF((SAM_PR_BAND="NA")OR(SAM_PR_BAND="NR"),"NA",
 IF((VALUE(SG_12_IC_PR)=0),"NA",
@@ -1789,50 +1789,50 @@ IF(((SAM_PR_BAND)="E"), "0",
 IF(((SG_12_FM_PR)=1),TEXT(VALUE(SG_12_5_Score)))))))
 ***SAM_02_1_PR_SCORE=TEXT(
 IF((SAM_PR_BAND="NA")OR(SAM_PR_BAND="NR"),"NA", 
-IF((SAM_PR_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02_1_PR_SCORE)))))
+IF((SAM_PR_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02_1_PR_SCORE)))))
 ***SAM_02.2A_PR1_SCORE=TEXT(
 IF((SAM_PR_BAND="NA")OR(SAM_PR_BAND="NR"),"NA", 
-IF((SAM_PR_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.2A_PR1_SCORE)))))
+IF((SAM_PR_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.2A_PR1_SCORE)))))
 ***SAM_02.2_PR2_SCORE=TEXT(
 IF((SAM_PR_BAND="NA")OR(SAM_PR_BAND="NR"),"NA", 
-IF((SAM_PR_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.2_PR2_SCORE)))))
+IF((SAM_PR_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.2_PR2_SCORE)))))
 ***SAM_02.2_PR3_SCORE=TEXT(
 IF((SAM_PR_BAND="NA")OR(SAM_PR_BAND="NR"),"NA", 
-IF((SAM_PR_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.2_PR3_SCORE)))))
+IF((SAM_PR_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.2_PR3_SCORE)))))
 ***SAM_02.3_PR_SCORE=TEXT(
 IF((SAM_PR_BAND="NA")OR(SAM_PR_BAND="NR"),"NA", 
-IF((SAM_PR_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.3_SCORE)))))
+IF((SAM_PR_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.3_SCORE)))))
 ***SAM_02.4_PR_SCORE=TEXT(
 IF((SAM_PR_BAND="NA")OR(SAM_PR_BAND="NR"),"NA", 
-IF((SAM_PR_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.4_PR_SCORE)))))
+IF((SAM_PR_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.4_PR_SCORE)))))
 ***SAM_04.1_PR_SCORE=TEXT(
 IF((SAM_PR_BAND="NA")OR(SAM_PR_BAND="NR"),"NA", 
-IF((SAM_PR_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_04.1_SCORE)))))
+IF((SAM_PR_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_04.1_SCORE)))))
 ***SAM_04.2_PR_SCORE=TEXT(
 IF((SAM_PR_BAND="NA")OR(SAM_PR_BAND="NR"),"NA", 
-IF((SAM_PR_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_04.2_PR_SCORE)))))
+IF((SAM_PR_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_04.2_PR_SCORE)))))
 ***SAM_04.4_PR_SCORE=TEXT(
 IF((SAM_PR_BAND="NA")OR(SAM_PR_BAND="NR"),"NA", 
-IF((SAM_PR_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_04.4_SCORE)))))
+IF((SAM_PR_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_04.4_SCORE)))))
 ***SAM_05.1_PR_SCORE=TEXT(
 IF((SAM_PR_BAND="NA")OR(SAM_PR_BAND="NR"),"NA", 
-IF((SAM_PR_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_05.1_PR_SCORE)))))
+IF((SAM_PR_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_05.1_PR_SCORE)))))
 ***SAM_05.2_PR_SCORE=TEXT(
 IF((SAM_PR_BAND="NA")OR(SAM_PR_BAND="NR"),"NA", 
-IF((SAM_PR_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_05.2_PR_SCORE)))))
+IF((SAM_PR_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_05.2_PR_SCORE)))))
 ***SAM_09.1_PR_SCORE=TEXT(
 IF((SAM_PR_BAND="NA")OR(SAM_PR_BAND="NR"),"NA", 
-IF((SAM_PR_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_09.1_SCORE_PR)))))
+IF((SAM_PR_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_09.1_SCORE_PR)))))
 ***SAM_SG_19_PR_SCORE=TEXT(
 IF((SAM_PR_BAND="NA")OR(SAM_PR_BAND="NR"),"NA", 
-IF((SAM_PR_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_SG_19_SCORE)))))
-***SAM_INF_BAND=TEXT(IMPORT_TEXT(2018_Assessment_SAM,18_SAM_INF_BAND))
-***SAM_INF_Total=IF(((SAM_INF_BAND)="E"), "0",IMPORT_VALUE(2018_Assessment_SAM,SAM_INF_T_Score))
-***SAM_INF_Denom=IMPORT_VALUE(2018_Assessment_SAM,SAM_INF_Denom)
-***SAM_INF_Nbindics=IMPORT_VALUE(2018_Assessment_SAM,SAM_INF_NbIndics)
-***SAM_INF_add_text=TEXT(IFBLANK(IMPORT_TEXT(2018_Assessment_SAM,SAM_INF_Add_text),"No Additional Indicators"))
-***SG_12_IC_INF=VALUE(IMPORT_VALUE(2018_Assessment_SAM,SG_12_IC_INF))
-***SG_12_FM_INF=VALUE(IMPORT_VALUE(2018_Assessment_SAM,SG_12_FM_INF))
+IF((SAM_PR_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_SG_19_SCORE)))))
+***SAM_INF_BAND=TEXT(IMPORT_TEXT(2018_Assessment_SAM - with corrections- not to be uploaded,18_SAM_INF_BAND))
+***SAM_INF_Total=IF(((SAM_INF_BAND)="E"), "0",IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_INF_T_Score))
+***SAM_INF_Denom=IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_INF_Denom)
+***SAM_INF_Nbindics=IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_INF_NbIndics)
+***SAM_INF_add_text=TEXT(IFBLANK(IMPORT_TEXT(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_INF_Add_text),"No Additional Indicators"))
+***SG_12_IC_INF=VALUE(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SG_12_IC_INF))
+***SG_12_FM_INF=VALUE(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SG_12_FM_INF))
 ***SG_12_3_INF_Score=TEXT(
 IF((SAM_INF_BAND="NA")OR(SAM_INF_BAND="NR"),"NA",
 IF((VALUE(SG_12_IC_INF)=0),"NA",
@@ -1845,42 +1845,42 @@ IF(((SAM_INF_BAND)="E"), "0",
 IF(((SG_12_FM_INF)=1),TEXT(VALUE(SG_12_5_Score)))))))
 ***SAM_02_1_INF_SCORE=TEXT(
 IF((SAM_INF_BAND="NA")OR(SAM_INF_BAND="NR"),"NA", 
-IF((SAM_INF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02_1_INF_SCORE)))))
+IF((SAM_INF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02_1_INF_SCORE)))))
 ***SAM_02.2A_INF1_SCORE=TEXT(
-IF((SAM_INF_BAND="NA")OR(SAM_INF_BAND="NR"),"NA", IF((SAM_INF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.2A_INF1_SCORE)))))
+IF((SAM_INF_BAND="NA")OR(SAM_INF_BAND="NR"),"NA", IF((SAM_INF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.2A_INF1_SCORE)))))
 ***SAM_02.2_INF2_SCORE=TEXT(
 IF((SAM_INF_BAND="NA")OR(SAM_INF_BAND="NR"),"NA", 
-IF((SAM_INF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.2_INF2_SCORE)))))
+IF((SAM_INF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.2_INF2_SCORE)))))
 ***SAM_02.2_INF3_SCORE=TEXT(
 IF((SAM_INF_BAND="NA")OR(SAM_INF_BAND="NR"),"NA", 
-IF((SAM_INF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.2_INF3_SCORE)))))
+IF((SAM_INF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.2_INF3_SCORE)))))
 ***SAM_02.3_INF_SCORE=TEXT(
 IF((SAM_INF_BAND="NA")OR(SAM_INF_BAND="NR"),"NA", 
-IF((SAM_INF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.3_SCORE)))))
+IF((SAM_INF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.3_SCORE)))))
 ***SAM_02.4_INF_SCORE=TEXT(
 IF((SAM_INF_BAND="NA")OR(SAM_INF_BAND="NR"),"NA", 
-IF((SAM_INF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_02.4_INF_SCORE)))))
+IF((SAM_INF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_02.4_INF_SCORE)))))
 ***SAM_04.1_INF_SCORE=TEXT(
 IF((SAM_INF_BAND="NA")OR(SAM_INF_BAND="NR"),"NA", 
-IF((SAM_INF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_04.1_SCORE)))))
+IF((SAM_INF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_04.1_SCORE)))))
 ***SAM_04.2_INF_SCORE=TEXT(
 IF((SAM_INF_BAND="NA")OR(SAM_INF_BAND="NR"),"NA", 
-IF((SAM_INF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_04.2_INF_SCORE)))))
+IF((SAM_INF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_04.2_INF_SCORE)))))
 ***SAM_04.4_INF_SCORE=TEXT(
 IF((SAM_INF_BAND="NA")OR(SAM_INF_BAND="NR"),"NA", 
-IF((SAM_INF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_04.4_SCORE)))))
+IF((SAM_INF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_04.4_SCORE)))))
 ***SAM_05.1_INF_SCORE=TEXT(
 IF((SAM_INF_BAND="NA")OR(SAM_INF_BAND="NR"),"NA", 
-IF((SAM_INF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_05.1_INF_SCORE)))))
+IF((SAM_INF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_05.1_INF_SCORE)))))
 ***SAM_05.2_INF_SCORE=TEXT(
 IF((SAM_INF_BAND="NA")OR(SAM_INF_BAND="NR"),"NA", 
-IF((SAM_INF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_05.2_INF_SCORE)))))
+IF((SAM_INF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_05.2_INF_SCORE)))))
 ***SAM_09.1_INF_SCORE=TEXT(
 IF((SAM_INF_BAND="NA")OR(SAM_INF_BAND="NR"),"NA", 
-IF((SAM_INF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_09.1_SCORE_INF)))))
+IF((SAM_INF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_09.1_SCORE_INF)))))
 ***SAM_SG_19_INF_SCORE=TEXT(
 IF((SAM_INF_BAND="NA")OR(SAM_INF_BAND="NR"),"NA", 
-IF((SAM_INF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM,SAM_SG_19_SCORE)))))
+IF((SAM_INF_BAND="E"),"0",TEXT(IMPORT_VALUE(2018_Assessment_SAM - with corrections- not to be uploaded,SAM_SG_19_SCORE)))))
 ***LEI_Band=TEXT(IMPORT_TEXT(2018_Assessment_LEI,18_LEI_Incorporation_BAND))
 ***LEI_Main_Strategy=TEXT(IMPORT_TEXT(2018_Assessment_LEI,Main_Strat))
 ***LEI_Screening=TEXT(IMPORT_VALUE(2018_Assessment_LEI,LEI_Screening))
